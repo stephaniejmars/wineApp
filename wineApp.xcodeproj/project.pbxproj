@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9052C8E124B79EBD00AC9CD0 /* AllWinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9052C8E024B79EBD00AC9CD0 /* AllWinesView.swift */; };
+		9052C8E324B79EEF00AC9CD0 /* MyFavsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9052C8E224B79EEF00AC9CD0 /* MyFavsView.swift */; };
+		9052C8E524B79F0D00AC9CD0 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9052C8E424B79F0D00AC9CD0 /* ScanView.swift */; };
+		9052C8E724B79F1E00AC9CD0 /* ManualAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9052C8E624B79F1E00AC9CD0 /* ManualAddView.swift */; };
+		9052C8E924B7B5F100AC9CD0 /* ScannedWineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9052C8E824B7B5F000AC9CD0 /* ScannedWineView.swift */; };
+		9052C8F324B7D22F00AC9CD0 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 9052C8F224B7D22E00AC9CD0 /* CodeScanner */; };
 		90CA1C8424B3BFA60060A692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CA1C8324B3BFA60060A692 /* AppDelegate.swift */; };
 		90CA1C8624B3BFA60060A692 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CA1C8524B3BFA60060A692 /* SceneDelegate.swift */; };
 		90CA1C8824B3BFA60060A692 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CA1C8724B3BFA60060A692 /* ContentView.swift */; };
@@ -35,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9052C8E024B79EBD00AC9CD0 /* AllWinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWinesView.swift; sourceTree = "<group>"; };
+		9052C8E224B79EEF00AC9CD0 /* MyFavsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavsView.swift; sourceTree = "<group>"; };
+		9052C8E424B79F0D00AC9CD0 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		9052C8E624B79F1E00AC9CD0 /* ManualAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualAddView.swift; sourceTree = "<group>"; };
+		9052C8E824B7B5F000AC9CD0 /* ScannedWineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannedWineView.swift; sourceTree = "<group>"; };
 		90CA1C8024B3BFA60060A692 /* wineApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wineApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90CA1C8324B3BFA60060A692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90CA1C8524B3BFA60060A692 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9052C8F324B7D22F00AC9CD0 /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +88,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9052C8EA24B7C34600AC9CD0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9052C8EB24B7C36200AC9CD0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9052C8EC24B7C36A00AC9CD0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		90CA1C7724B3BFA60060A692 = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +132,17 @@
 		90CA1C8224B3BFA60060A692 /* wineApp */ = {
 			isa = PBXGroup;
 			children = (
+				9052C8EC24B7C36A00AC9CD0 /* ViewModels */,
+				9052C8EB24B7C36200AC9CD0 /* Models */,
+				9052C8EA24B7C34600AC9CD0 /* Views */,
+				9052C8E624B79F1E00AC9CD0 /* ManualAddView.swift */,
+				9052C8E424B79F0D00AC9CD0 /* ScanView.swift */,
+				9052C8E824B7B5F000AC9CD0 /* ScannedWineView.swift */,
+				9052C8E224B79EEF00AC9CD0 /* MyFavsView.swift */,
 				90CA1C8324B3BFA60060A692 /* AppDelegate.swift */,
-				90CA1C8524B3BFA60060A692 /* SceneDelegate.swift */,
 				90CA1C8724B3BFA60060A692 /* ContentView.swift */,
+				9052C8E024B79EBD00AC9CD0 /* AllWinesView.swift */,
+				90CA1C8524B3BFA60060A692 /* SceneDelegate.swift */,
 				90CA1C8924B3BFB00060A692 /* Assets.xcassets */,
 				90CA1C8E24B3BFB00060A692 /* LaunchScreen.storyboard */,
 				90CA1C9124B3BFB00060A692 /* Info.plist */,
@@ -152,6 +193,9 @@
 			dependencies = (
 			);
 			name = wineApp;
+			packageProductDependencies = (
+				9052C8F224B7D22E00AC9CD0 /* CodeScanner */,
+			);
 			productName = wineApp;
 			productReference = 90CA1C8024B3BFA60060A692 /* wineApp.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +268,9 @@
 				Base,
 			);
 			mainGroup = 90CA1C7724B3BFA60060A692;
+			packageReferences = (
+				9052C8F124B7D22E00AC9CD0 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = 90CA1C8124B3BFA60060A692 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -267,9 +314,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9052C8E124B79EBD00AC9CD0 /* AllWinesView.swift in Sources */,
+				9052C8E324B79EEF00AC9CD0 /* MyFavsView.swift in Sources */,
+				9052C8E924B7B5F100AC9CD0 /* ScannedWineView.swift in Sources */,
+				9052C8E724B79F1E00AC9CD0 /* ManualAddView.swift in Sources */,
 				90CA1C8424B3BFA60060A692 /* AppDelegate.swift in Sources */,
 				90CA1C8624B3BFA60060A692 /* SceneDelegate.swift in Sources */,
 				90CA1C8824B3BFA60060A692 /* ContentView.swift in Sources */,
+				9052C8E524B79F0D00AC9CD0 /* ScanView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +488,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"wineApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 557D6B4UKF;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = wineApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -455,6 +508,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"wineApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 557D6B4UKF;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = wineApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -588,6 +642,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9052C8F124B7D22E00AC9CD0 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9052C8F224B7D22E00AC9CD0 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9052C8F124B7D22E00AC9CD0 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 90CA1C7824B3BFA60060A692 /* Project object */;
 }
